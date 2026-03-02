@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>プライベートサロン Nature | 自分を取り戻す整体院</title>
+    <meta name="description" content="元理学療法士による、40〜50代女性のための自分を取り戻す整体院。本音で生きられる身体と心を育てる場所。">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;700&family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            base: '#fdf8f7', // エクリュ・くすみピンク系
+                            accent: '#e29e8f', // くすみピンク
+                            leaf: '#6b705c', // セージグリーン
+                            dark: '#4a4e4d', // 濃いグレー
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['Shippori Mincho', 'serif'],
+                        sans: ['Noto Sans JP', 'sans-serif'],
+                    },
+                    animation: {
+                        'fade-in-up': 'fadeInUp 1.2s ease-out forwards',
+                        'subtle-zoom': 'subtleZoom 20s infinite alternate',
+                    },
+                    keyframes: {
+                        fadeInUp: {
+                            '0%': { opacity: '0', transform: 'translateY(30px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        },
+                        subtleZoom: {
+                            '0%': { transform: 'scale(1)' },
+                            '100%': { transform: 'scale(1.1)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { background-color: #fdf8f7; color: #4a4e4d; font-family: 'Noto Sans JP', sans-serif; overflow-x: hidden; }
+        .font-serif { font-family: 'Shippori Mincho', serif; }
+        .reveal { opacity: 0; transform: translateY(30px); transition: all 1.2s ease-out; }
+        .reveal.active { opacity: 1; transform: translateY(0); }
+        .parallax-bg { background-attachment: fixed; background-position: center; background-size: cover; }
+        .btn-hover { transition: all 0.3s ease; }
+        .btn-hover:hover { transform: translateY(-2px); box-shadow: 0 10px 20px rgba(226, 158, 143, 0.3); }
+        
+        /* カスタムスクロールバー */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #fdf8f7; }
+        ::-webkit-scrollbar-thumb { background: #e29e8f; border-radius: 4px; }
+    </style>
+</head>
+<body class="leading-relaxed">
+
+    <nav class="fixed w-full z-50 bg-white/70 backdrop-blur-md border-b border-brand-accent/10">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-xl font-serif font-bold tracking-widest text-brand-leaf">Nature</div>
+            <div class="hidden md:flex space-x-8 text-sm tracking-widest font-medium">
+                <a href="#concept" class="hover:text-brand-accent transition">Concept</a>
+                <a href="#menu" class="hover:text-brand-accent transition">Menu</a>
+                <a href="#access" class="hover:text-brand-accent transition">Access</a>
+                <a href="https://lin.ee/JcLAyhG" target="_blank" class="text-brand-accent font-bold">Reserve</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="relative h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80" 
+                 alt="ヒーロー画像" class="w-full h-full object-cover animate-subtle-zoom">
+            <div class="absolute inset-0 bg-white/30"></div>
+        </div>
+        <div class="relative z-10 text-center px-6 animate-fade-in-up">
+            <p class="text-brand-leaf font-serif tracking-[0.3em] mb-4 text-sm md:text-base">PRIVATE SALON Nature</p>
+            <h1 class="text-4xl md:text-6xl font-serif text-brand-dark leading-tight mb-8">
+                自分を取り戻す。<br>
+                <span class="text-3xl md:text-5xl">本音で生きられる身体と心を。</span>
+            </h1>
+            <div class="flex flex-col md:flex-row gap-4 justify-center">
+                <a href="https://lin.ee/JcLAyhG" target="_blank" class="btn-hover bg-brand-accent text-white px-10 py-4 rounded-full font-bold tracking-widest shadow-lg">
+                    公式LINEで予約・相談
+                </a>
+            </div>
+        </div>
+        <div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce">
+            <div class="w-[1px] h-16 bg-brand-leaf/40"></div>
+        </div>
+    </section>
+
+    <section id="concept" class="py-24 md:py-32 px-6">
+        <div class="max-w-4xl mx-auto">
+            <div class="reveal">
+                <span class="text-brand-accent font-serif tracking-widest block mb-4 text-center italic">Message</span>
+                <h2 class="text-3xl md:text-4xl font-serif text-center mb-16 leading-snug">もっと、自分のために生きていい。</h2>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div class="reveal">
+                    <img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                         alt="コンセプト画像" class="rounded-2xl shadow-2xl">
+                </div>
+                <div class="reveal space-y-6 text-brand-dark/90 leading-loose">
+                    <p>元理学療法士として、多くの患者様と向き合う中で感じた「病気になる前にできることはなかったか」という無力感。そして、家族を優先し、常に自分を後回しにしてきた母の姿が重なりました。</p>
+                    <p>「もっと自分を大切にしてほしい」「これからは自分のために生きてほしい」。その想いがNatureの原点です。</p>
+                    <p>Natureは単なる整体院ではありません。身体を整えることで心に余白を作り、あなたが心の奥にある「本音」に気づき、軽やかに人生を歩み出すための場所です。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-white/50 border-y border-brand-accent/10">
+        <div class="max-w-5xl mx-auto px-6">
+            <h3 class="text-2xl font-serif text-center mb-12 text-brand-leaf italic">5つの約束</h3>
+            <div class="grid grid-cols-1 md:grid-cols-5 gap-8">
+                <div class="reveal text-center">
+                    <div class="text-brand-accent font-serif text-2xl mb-2">01</div>
+                    <p class="text-sm font-bold">不安で<br>縛らない</p>
+                </div>
+                <div class="reveal text-center" style="transition-delay: 0.1s;">
+                    <div class="text-brand-accent font-serif text-2xl mb-2">02</div>
+                    <p class="text-sm font-bold">依存を<br>生まない</p>
+                </div>
+                <div class="reveal text-center" style="transition-delay: 0.2s;">
+                    <div class="text-brand-accent font-serif text-2xl mb-2">03</div>
+                    <p class="text-sm font-bold">卒業できる<br>整体院</p>
+                </div>
+                <div class="reveal text-center" style="transition-delay: 0.3s;">
+                    <div class="text-brand-accent font-serif text-2xl mb-2">04</div>
+                    <p class="text-sm font-bold">安心を<br>整える</p>
+                </div>
+                <div class="reveal text-center" style="transition-delay: 0.4s;">
+                    <div class="text-brand-accent font-serif text-2xl mb-2">05</div>
+                    <p class="text-sm font-bold">本音を<br>引き出す</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="menu" class="py-24 md:py-32 bg-brand-base">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="reveal text-center mb-20">
+                <span class="text-brand-accent font-serif tracking-widest block mb-4 uppercase">Services</span>
+                <h2 class="text-3xl md:text-4xl font-serif">自分を愛でるための時間</h2>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="reveal bg-white p-8 md:p-12 rounded-3xl shadow-sm border border-brand-accent/5 flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-start mb-6">
+                            <h4 class="text-xl font-serif text-brand-leaf font-bold italic leading-relaxed">元気な自分を<br>取り戻す整体</h4>
+                            <span class="text-brand-accent font-serif text-xl">¥10,000</span>
+                        </div>
+                        <p class="text-brand-dark/80 text-sm mb-6 leading-loose">
+                            対面での施術です。身体の強張りを解きほぐし、深いリラックスの中で「安心」を整えます。理学療法士の知見に基づいた、根本からのアプローチです。
+                        </p>
+                        <ul class="text-xs text-brand-leaf/70 space-y-2 mb-8">
+                            <li>・60分（カウンセリング含む）</li>
+                            <li>・完全予約制プライベート空間</li>
+                        </ul>
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1519823551278-64ac92734fb1?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="整体" class="w-full h-48 object-cover rounded-xl mb-6">
+                    <a href="https://lin.ee/JcLAyhG" target="_blank" class="w-full py-3 border border-brand-accent text-brand-accent text-center rounded-full hover:bg-brand-accent hover:text-white transition tracking-widest text-sm">LINEで空き状況を確認</a>
+                </div>
+
+                <div class="reveal bg-white p-8 md:p-12 rounded-3xl shadow-sm border border-brand-accent/5 flex flex-col justify-between" style="transition-delay: 0.2s;">
+                    <div>
+                        <div class="flex justify-between items-start mb-6">
+                            <h4 class="text-xl font-serif text-brand-leaf font-bold italic leading-relaxed">元気な自分へと<br>還るセッション</h4>
+                            <span class="text-brand-accent font-serif text-xl">¥10,000</span>
+                        </div>
+                        <p class="text-brand-dark/80 text-sm mb-6 leading-loose">
+                            Google Meetを使用したオンラインセッションです。対話を通じて心の重荷を降ろし、自分の本音と向き合う「余白」を作ります。遠方の方にも。
+                        </p>
+                        <ul class="text-xs text-brand-leaf/70 space-y-2 mb-8">
+                            <li>・60分（オンライン/Google Meet）</li>
+                            <li>・場所を選ばずリラックスして受講可能</li>
+                        </ul>
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1516302752625-fcc3c50ae61f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="オンラインセッション" class="w-full h-48 object-cover rounded-xl mb-6">
+                    <a href="https://lin.ee/JcLAyhG" target="_blank" class="w-full py-3 border border-brand-accent text-brand-accent text-center rounded-full hover:bg-brand-accent hover:text-white transition tracking-widest text-sm">セッションを申し込む</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="access" class="py-24 md:py-32">
+        <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+            <div class="reveal">
+                <span class="text-brand-accent font-serif tracking-widest block mb-4 uppercase">Access</span>
+                <h2 class="text-3xl font-serif mb-8 italic">温かい家のような空間で<br>お待ちしております。</h2>
+                
+                <div class="space-y-6 text-brand-dark/80">
+                    <div>
+                        <h5 class="font-bold text-brand-leaf mb-2 font-serif tracking-wider">LOCATION</h5>
+                        <p>プライベートサロン Nature<br>
+                        ※詳細はご予約時にお伝えいたします。</p>
+                    </div>
+                    <div>
+                        <h5 class="font-bold text-brand-leaf mb-2 font-serif tracking-wider">OPENING HOURS</h5>
+                        <p>完全予約制（詳細は公式LINEよりお問い合わせください）</p>
+                    </div>
+                    <div class="flex gap-6 pt-4">
+                        <a href="https://www.instagram.com/s.daisuke_nature?igsh=eTQyNmU5dXhuYTBh&utm_source=qr" target="_blank" class="text-brand-accent hover:opacity-70 transition">Instagram</a>
+                        <a href="https://www.threads.com/@s.daisuke_nature?igshid=NTc4MTIwNjQ2YQ==" target="_blank" class="text-brand-accent hover:opacity-70 transition">Threads</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="reveal rounded-3xl overflow-hidden shadow-2xl h-[450px] border-8 border-white">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.7479754683745!2d139.7454329!3d35.6585805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bbd9009ec09%3A0x481fb9f758e45f0!2z44CSMTA1LTAwMTEg5p2x5Lqs6YO95riv5Yy66Iqd5YWs5ZyS77yU5LiB55uu77yS4oiS77yYIOadseS6rOOCv_ODr-ODvA!5e0!3m2!1sja!2sjp!4v1710000000000!5m2!1sja!2sjp" 
+                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-brand-leaf text-white text-center px-6">
+        <div class="max-w-3xl mx-auto reveal">
+            <h2 class="text-2xl md:text-3xl font-serif mb-8 leading-relaxed">
+                「あそこに行けば人生が変わる」<br>
+                そう言っていただける場所でありたい。
+            </h2>
+            <p class="mb-12 opacity-80 text-sm leading-loose">
+                身体を整えることは、自分を大切にすることの第一歩です。<br>
+                今のあなたに必要な「余白」を、一緒に作りましょう。
+            </p>
+            <a href="https://lin.ee/JcLAyhG" target="_blank" class="inline-block bg-white text-brand-leaf px-12 py-5 rounded-full font-bold tracking-[0.2em] btn-hover shadow-xl">
+                公式LINEでお友達登録
+            </a>
+        </div>
+    </section>
+
+    <footer class="py-12 bg-brand-leaf border-t border-white/10 text-white/40 text-center text-xs tracking-widest">
+        <p class="mb-4 text-white/60">Nature - Private Salon</p>
+        <p>© 2024 Nature. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.reveal').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Smooth Scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
